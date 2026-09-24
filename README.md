@@ -81,7 +81,7 @@ Example model ids (always confirm in the live catalog):
 
 - GLM: `glm-5.2`
 - MiniMax: `MiniMax-M3`
-- DeepSeek: `deepseek-v4-flash` or `deepseek-v3-2-251201` (prefer Flash / V3.2)
+- DeepSeek: `deepseek-v3-2-251201`
 
 ```ts
 const client = new OpenAI({
@@ -89,7 +89,7 @@ const client = new OpenAI({
   baseURL: "https://api.powertokens.ai/v1",
 });
 const resp = await client.chat.completions.create({
-  model: "deepseek-v4-flash",
+  model: "deepseek-v3-2-251201",
   messages: [{ role: "user", content: "Hello" }],
 });
 ```
